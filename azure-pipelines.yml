@@ -1,4 +1,13 @@
 # Starter pipeline
+- task: FlutterBuild@0
+- task: FlutterInstall@0
+  inputs:
+    channel: 'beta'
+    version: 'latest'
+  inputs:
+    target: 'allweb'
+    projectDirectory: '.'
+    verboseMode: true
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
