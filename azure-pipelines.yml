@@ -20,7 +20,8 @@ jobs:
       inputs:
         channel: 'beta'
         version: 'latest'
-    - task: FlutterBuild@0
+    - task: aloisdeniel.flutter.flutter-build.FlutterBuild@0
+      displayName: 'Flutter Build'
       inputs:
         target: apk
         projectDirectory: $(projectDirectory)
