@@ -10,8 +10,8 @@ trigger:
 - master
 
 # Flutter build
-jobs:
-  - job: 
+jobs: 
+  - job: Android
     pool:
       vmImage: 'ubuntu-latest'
     steps:
