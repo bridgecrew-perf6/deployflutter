@@ -11,7 +11,7 @@ trigger:
 
 # Flutter build
 jobs:
-  - job: Android
+  - job: 
     pool:
       vmImage: 'ubuntu-latest'
     steps:
@@ -21,6 +21,6 @@ jobs:
         version: 'latest'
     - task: FlutterBuild@0
       inputs:
-        target: 'allweb'
+        target: apk
         projectDirectory: $(projectDirectory)
         verboseMode: true
