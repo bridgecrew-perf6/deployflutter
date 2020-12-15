@@ -15,7 +15,7 @@ jobs:
     pool:
       vmImage: 'ubuntu-latest'
     steps:
-    - task: aloisdeniel.flutter.flutter-build.FlutterBuild
+    - task: aloisdeniel.flutter.flutter-build.FlutterBuild@0
       displayName: 'Flutter Install'
       inputs:
         channel: 'beta'
